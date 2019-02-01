@@ -18,6 +18,7 @@ public class Dice_Game {
         //System.out.println(random1);
         random2 = (int) (Math.random() * 6 + 1);
         //System.out.println(random2);
+
         System.out.println("YOUR ROLLS " + random1 + " &" + random2);
 
         if((random1==1)&&(random2==1)){
@@ -45,12 +46,12 @@ public class Dice_Game {
                 random4 = (int) (Math.random() * 6 + 1);
                 //System.out.println(random4);
                 System.out.println("YOUR ROLLS " + random3 + " &" + random4);
-                if((random3==1)||(random4==1)){
-
+                if((random3==1)&&(random4==1)){
+                    sum=sum+25;
                     System.out.println("Score: "+sum);
                 }
-                else if((random3==1)&&(random4==1)){
-                    sum=sum+25;
+                else if((random3==1)||(random4==1)){
+
                     System.out.println("Score: "+sum);
                 }
                 else{
