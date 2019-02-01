@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Dice_Game {
+    //PROGRAMMED BY AYALENEH YILMA
     public static void main(String[] args) {
         int sum=0;
         int random1,random2,random3,random4;
@@ -18,12 +19,13 @@ public class Dice_Game {
         random2 = (int) (Math.random() * 6 + 1);
         //System.out.println(random2);
         System.out.println("YOUR ROLLS " + random1 + " &" + random2);
-        if((random1==1)||(random2==1)){
-            sum=0;
+
+        if((random1==1)&&(random2==1)){
+            sum=25;
             System.out.println("Score: "+sum);
         }
-        else if((random1==1)&&(random2==1)){
-            sum=25;
+        else if((random1==1)||(random2==1)){
+            sum=0;
             System.out.println("Score: "+sum);
         }
         else{
